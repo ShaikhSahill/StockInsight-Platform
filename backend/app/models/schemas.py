@@ -9,7 +9,7 @@ class CompanyBase(BaseModel):
 
 class Company(CompanyBase):
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class StockData(BaseModel):
     date: str
